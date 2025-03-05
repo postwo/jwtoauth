@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/${data}?serverTimezone=UTC&characterEncoding=UTF-8
+    username: ${user}
+    password: ${pw}
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop # create update none create-drop
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+  # JWT secret key
+jwt:
+  secret-key: ${jwtkey}
