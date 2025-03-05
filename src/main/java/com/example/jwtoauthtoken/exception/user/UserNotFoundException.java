@@ -1,6 +1,7 @@
 package com.example.jwtoauthtoken.exception.user;
 
-import com.example.jwtoauth.exception.ClientErrorException;
+
+import com.example.jwtoauthtoken.exception.ClientErrorException;
 import org.springframework.http.HttpStatus;
 
 public class UserNotFoundException extends ClientErrorException {
